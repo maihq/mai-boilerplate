@@ -25,3 +25,16 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+# OS and Editor files
+*~
+.DS_Store
+
+# Coveralls token files
+.coveralls.yml
+
+# Generated assets folder
+public/assets/
+
+# Custom config file
+components/config/custom.js

@@ -1,0 +1,48 @@
+{
+  "name": "mai",
+  "version": "1.0.0",
+  "description": "koa boilerplate for mai3.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/",
+    "start": "node index.js",
+    "local": "NODE_ENV=local node index.js",
+    "dev": "NODE_ENV=dev nodemon --ext js --ignore components/client-js/ --watch components/ --watch index.js index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitinn/mai.git"
+  },
+  "keywords": [
+    "mai",
+    "beginhq",
+    "koa",
+    "boilerplate"
+  ],
+  "author": "David Frank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitinn/mai/issues"
+  },
+  "homepage": "https://github.com/bitinn/mai",
+  "devDependencies": {
+    "mocha": "2.2.1",
+    "nodemon": "1.3.7"
+  },
+  "dependencies": {
+    "co": "4.5.1",
+    "koa": "0.18.1",
+    "koa-compose": "2.3.0",
+    "koa-livereload": "0.1.23",
+    "koa-logger": "1.2.2",
+    "koa-router": "4.2.0",
+    "koa-static": "1.4.9",
+    "deep-extend": "0.3.3",
+    "then-redis": "1.3.0",
+    "yieldb": "2.3.0"
+  },
+  "engines": {
+    "iojs": ">= 1.5.0",
+    "node": ">= 0.12.0"
+  }
+}
