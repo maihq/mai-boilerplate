@@ -1,5 +1,5 @@
 {
-  "name": "mai",
+  "name": "mai-boilerplate",
   "version": "1.0.0",
   "description": "koa boilerplate for mai3.me",
   "main": "index.js",
@@ -11,20 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitinn/mai.git"
+    "url": "https://github.com/maihq/mai-boilerplate.git"
   },
   "keywords": [
-    "mai",
-    "beginhq",
+    "maihq",
     "koa",
     "boilerplate"
   ],
-  "author": "David Frank",
+  "author": "Mai HQ",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bitinn/mai/issues"
+    "url": "https://github.com/maihq/mai-boilerplate/issues"
   },
-  "homepage": "https://github.com/bitinn/mai",
+  "homepage": "https://github.com/maihq/mai-boilerplate",
   "devDependencies": {
     "mocha": "2.2.1",
     "nodemon": "1.3.7"
