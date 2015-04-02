@@ -31,9 +31,11 @@ This repo aims to provide some directions on how to kickstart your first koa app
 # App structure
 
 ```
-components - contains your app
-public - contains public assets
-tests - literally
+/components     - contain your app
+/public         - contains public assets
+/tests          - literally
+index.js        - app entry point
+package.json    - find npm run scripts here
 ```
 
 Instead of forcing you into a specific folder structure (like most MVC, MVVM frameworks), we simply recommend *grouping features into isolated components, stay lean and modular*.
