@@ -6,6 +6,7 @@
  */
 
 var redis = require('then-redis');
+var client;
 
 module.exports = database;
 
@@ -16,6 +17,9 @@ module.exports = database;
  * @return  Redis
  */
 function *database(opts) {
+	if (client) {
+		return client;
+	}
 
 	if (!opts) {
 		throw new Error('missing options');
@@ -25,7 +29,7 @@ function *database(opts) {
 		throw new Error('database must be specified');
 	}
 
-	var client = redis.createClient(opts);
+	client = redis.createClient(opts);
 
 	client.on('error', function(err) {
 		// prevent failed redis connection from crashing server
@@ -35,5 +39,4 @@ function *database(opts) {
 	yield client.select(opts.database);
 
 	return client;
-
 };

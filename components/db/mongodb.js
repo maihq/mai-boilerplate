@@ -6,6 +6,7 @@
  */
 
 var mongo = require('yieldb').connect;
+var db;
 
 module.exports = database;
 
@@ -16,6 +17,9 @@ module.exports = database;
  * @return  MongoDB
  */
 function *database(opts) {
+	if (db) {
+		return db;
+	}
 
 	if (!opts) {
 		throw new Error('missing options');
@@ -56,6 +60,7 @@ function *database(opts) {
 	}
 
 	// make sure we have active connection to db
-	return yield mongo(url);
+	db = yield mongo(url);
 
+	return db;
 };
