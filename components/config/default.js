@@ -20,7 +20,7 @@ module.exports = {
 		, w: 1
 	}
 	, redis: {
-		server: '127.0.0.1'
+		host: '127.0.0.1'
 		, port: 6379
 		, pass: ''
 		, database: 0
